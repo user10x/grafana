@@ -16,10 +16,12 @@ import (
 
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/data"
+
 	"github.com/grafana/grafana/pkg/api/dtos"
 	"github.com/grafana/grafana/pkg/components/simplejson"
 	"github.com/grafana/grafana/pkg/models"
 	"github.com/grafana/grafana/pkg/services/dashboards"
+	"github.com/grafana/grafana/pkg/services/datasources"
 	"github.com/grafana/grafana/pkg/services/featuremgmt"
 	"github.com/grafana/grafana/pkg/services/query"
 	"github.com/grafana/grafana/pkg/web/webtest"
@@ -254,7 +256,7 @@ func TestAPIQueryPublicDashboard(t *testing.T) {
 	qds := query.ProvideService(
 		nil,
 		&fakeDatasources.FakeCacheService{
-			DataSources: []*models.DataSource{
+			DataSources: []*datasources.DataSource{
 				{Uid: "mysqlds"},
 				{Uid: "promds"},
 				{Uid: "promds2"},
