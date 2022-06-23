@@ -355,7 +355,7 @@
    "type": "object",
    "x-go-package": "github.com/grafana/grafana/pkg/services/ngalert/api/tooling/definitions"
   },
-  "AlertRuleGroup": {
+  "AlertRuleGroupMetadata": {
    "properties": {
     "interval": {
      "format": "int64",
@@ -545,108 +545,6 @@
    },
    "type": "array",
    "x-go-package": "github.com/grafana/grafana/pkg/services/ngalert/api/tooling/definitions"
-  },
-  "CreateDashboardSnapshotCommand": {
-   "properties": {
-    "Result": {
-     "$ref": "#/definitions/DashboardSnapshot"
-    },
-    "dashboard": {
-     "$ref": "#/definitions/Json"
-    },
-    "deleteKey": {
-     "description": "Unique key used to delete the snapshot. It is different from the `key` so that only the creator can delete the snapshot. Required if `external` is `true`.",
-     "type": "string",
-     "x-go-name": "DeleteKey"
-    },
-    "expires": {
-     "default": 0,
-     "description": "When the snapshot should expire in seconds in seconds. Default is never to expire.",
-     "format": "int64",
-     "type": "integer",
-     "x-go-name": "Expires"
-    },
-    "external": {
-     "default": false,
-     "description": "these are passed when storing an external snapshot ref\nSave the snapshot on an external server rather than locally.",
-     "type": "boolean",
-     "x-go-name": "External"
-    },
-    "key": {
-     "description": "Define the unique key. Required if `external` is `true`.",
-     "type": "string",
-     "x-go-name": "Key"
-    },
-    "name": {
-     "description": "Snapshot name",
-     "type": "string",
-     "x-go-name": "Name"
-    }
-   },
-   "required": [
-    "dashboard"
-   ],
-   "type": "object",
-   "x-go-package": "github.com/grafana/grafana/pkg/models"
-  },
-  "DashboardSnapshot": {
-   "description": "DashboardSnapshot model",
-   "properties": {
-    "Created": {
-     "format": "date-time",
-     "type": "string"
-    },
-    "Dashboard": {
-     "$ref": "#/definitions/Json"
-    },
-    "DashboardEncrypted": {
-     "items": {
-      "format": "uint8",
-      "type": "integer"
-     },
-     "type": "array"
-    },
-    "DeleteKey": {
-     "type": "string"
-    },
-    "Expires": {
-     "format": "date-time",
-     "type": "string"
-    },
-    "External": {
-     "type": "boolean"
-    },
-    "ExternalDeleteUrl": {
-     "type": "string"
-    },
-    "ExternalUrl": {
-     "type": "string"
-    },
-    "Id": {
-     "format": "int64",
-     "type": "integer"
-    },
-    "Key": {
-     "type": "string"
-    },
-    "Name": {
-     "type": "string"
-    },
-    "OrgId": {
-     "format": "int64",
-     "type": "integer"
-    },
-    "Updated": {
-     "format": "date-time",
-     "type": "string"
-    },
-    "UserId": {
-     "format": "int64",
-     "type": "integer"
-    }
-   },
-   "type": "object",
-   "x-go-package": "github.com/grafana/grafana/pkg/models"
   },
   "DateTime": {
    "description": "DateTime is a time but it serializes to ISO8601 format with millis\nIt knows how to read 3 different variations of a RFC3339 date time.\nMost APIs we encounter want either millisecond or second precision times.\nThis just tries to make it worry-free.",
@@ -3141,7 +3039,6 @@
    "x-go-package": "github.com/prometheus/alertmanager/timeinterval"
   },
   "URL": {
-   "description": "The general form represented is:\n\n[scheme:][//[userinfo@]host][/]path[?query][#fragment]\n\nURLs that do not start with a slash after the scheme are interpreted as:\n\nscheme:opaque[?query][#fragment]\n\nNote that the Path field is stored in decoded form: /%47%6f%2f becomes /Go/.\nA consequence is that it is impossible to tell which slashes in the Path were\nslashes in the raw URL and which were %2f. This distinction is rarely important,\nbut when it is, the code should use RawPath, an optional field which only gets\nset if the default encoding is different from Path.\n\nURL's String method uses the EscapedPath method to obtain the path. See the\nEscapedPath method for more details.",
    "properties": {
     "ForceQuery": {
      "type": "boolean"
@@ -3174,9 +3071,9 @@
      "$ref": "#/definitions/Userinfo"
     }
    },
-   "title": "A URL represents a parsed URL (technically, a URI reference).",
+   "title": "URL is a custom URL type that allows validation at configuration load time.",
    "type": "object",
-   "x-go-package": "net/url"
+   "x-go-package": "github.com/prometheus/common/config"
   },
   "Userinfo": {
    "description": "The Userinfo type is an immutable encapsulation of username and\npassword details for a URL. An existing Userinfo value is guaranteed\nto have a username set (potentially empty, as allowed by RFC 2396),\nand optionally a password.",
@@ -3400,11 +3297,12 @@
    "x-go-package": "github.com/prometheus/alertmanager/api/v2/models"
   },
   "alertGroups": {
-   "description": "AlertGroups alert groups",
    "items": {
     "$ref": "#/definitions/alertGroup"
    },
-   "type": "array"
+   "type": "array",
+   "x-go-name": "AlertGroups",
+   "x-go-package": "github.com/prometheus/alertmanager/api/v2/models"
   },
   "alertStatus": {
    "description": "AlertStatus alert status",
@@ -3827,7 +3725,6 @@
    "type": "object"
   },
   "receiver": {
-   "description": "Receiver receiver",
    "properties": {
     "name": {
      "description": "name",
@@ -3838,7 +3735,9 @@
    "required": [
     "name"
    ],
-   "type": "object"
+   "type": "object",
+   "x-go-name": "Receiver",
+   "x-go-package": "github.com/prometheus/alertmanager/api/v2/models"
   },
   "silence": {
    "description": "Silence silence",
@@ -5785,7 +5684,7 @@
     "operationId": "RouteDeleteContactpoints",
     "parameters": [
      {
-      "description": "UID should be the contact point unique identifier",
+      "description": "UID is the contact point unique identifier",
       "in": "path",
       "name": "UID",
       "required": true,
@@ -5809,7 +5708,7 @@
     "operationId": "RoutePutContactpoint",
     "parameters": [
      {
-      "description": "UID should be the contact point unique identifier",
+      "description": "UID is the contact point unique identifier",
       "in": "path",
       "name": "UID",
       "required": true,
@@ -5844,6 +5743,21 @@
    }
   },
   "/api/v1/provisioning/folder/{FolderUID}/rule-groups/{Group}": {
+   "get": {
+    "operationId": "RouteGetAlertRuleGroup",
+    "responses": {
+     "200": {
+      "$ref": "#/responses/AlertRuleGroup"
+     },
+     "404": {
+      "description": " Not found."
+     }
+    },
+    "summary": "Get a rule group.",
+    "tags": [
+     "provisioning"
+    ]
+   },
    "put": {
     "consumes": [
      "application/json"
@@ -5866,16 +5780,13 @@
       "in": "body",
       "name": "Body",
       "schema": {
-       "$ref": "#/definitions/AlertRuleGroup"
+       "$ref": "#/definitions/AlertRuleGroupMetadata"
       }
      }
     ],
     "responses": {
      "200": {
-      "description": "AlertRuleGroup",
-      "schema": {
-       "$ref": "#/definitions/AlertRuleGroup"
-      }
+      "$ref": "#/responses/AlertRuleGroup"
      },
      "400": {
       "description": "ValidationError",
