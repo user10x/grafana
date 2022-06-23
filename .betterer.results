@@ -10635,7 +10635,7 @@ exports[`no explicit any`] = {
     "public/app/plugins/datasource/cloud-monitoring/components/Experimental/Metrics.tsx:2463658307": [
       [85, 47, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/datasource/cloud-monitoring/components/Experimental/VisualMetricQueryEditor.tsx:2519139568": [
+    "public/app/plugins/datasource/cloud-monitoring/components/Experimental/VisualMetricQueryEditor.tsx:1601348454": [
       [21, 10, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/plugins/datasource/cloud-monitoring/components/MQLQueryEditor.tsx:1964060978": [
