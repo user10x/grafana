@@ -98,8 +98,8 @@ exports[`no enzyme tests`] = {
     "public/app/features/folders/FolderSettingsPage.test.tsx:1109052730": [
       [0, 19, 13, "RegExp match", "2409514259"]
     ],
-    "public/app/plugins/datasource/cloudwatch/components/ConfigEditor.test.tsx:227258837": [
-      [0, 19, 13, "RegExp match", "2409514259"]
+    "public/app/plugins/datasource/cloudwatch/components/ConfigEditor.test.tsx:4057721851": [
+      [1, 19, 13, "RegExp match", "2409514259"]
     ],
     "public/app/plugins/datasource/elasticsearch/configuration/ConfigEditor.test.tsx:3481855642": [
       [0, 26, 13, "RegExp match", "2409514259"]
@@ -2314,15 +2314,15 @@ exports[`no type assertions`] = {
       [490, 25, 293, "Do not use any type assertions.", "3989849883"],
       [492, 21, 213, "Do not use any type assertions.", "2695721884"]
     ],
-    "public/app/features/dashboard/state/PanelModel.ts:1354672921": [
+    "public/app/features/dashboard/state/PanelModel.ts:3953810869": [
       [210, 18, 11, "Do not use any type assertions.", "3816020039"],
       [214, 18, 11, "Do not use any type assertions.", "3816020039"],
       [218, 14, 11, "Do not use any type assertions.", "3816020039"],
       [223, 7, 11, "Do not use any type assertions.", "3816020039"],
-      [360, 21, 11, "Do not use any type assertions.", "3816020039"],
-      [373, 7, 11, "Do not use any type assertions.", "3816020039"],
-      [424, 14, 11, "Do not use any type assertions.", "3816020039"],
-      [503, 22, 18, "Do not use any type assertions.", "1060162663"]
+      [367, 21, 11, "Do not use any type assertions.", "3816020039"],
+      [380, 7, 11, "Do not use any type assertions.", "3816020039"],
+      [431, 14, 11, "Do not use any type assertions.", "3816020039"],
+      [510, 22, 18, "Do not use any type assertions.", "1060162663"]
     ],
     "public/app/features/dashboard/state/getPanelOptionsWithDefaults.ts:305941121": [
       [83, 22, 34, "Do not use any type assertions.", "3273769083"],
@@ -3821,11 +3821,11 @@ exports[`no type assertions`] = {
       [31, 18, 132, "Do not use any type assertions.", "2458802274"],
       [82, 30, 14, "Do not use any type assertions.", "1944829649"]
     ],
-    "public/app/plugins/datasource/cloudwatch/__mocks__/CloudWatchDataSource.ts:2937369549": [
+    "public/app/plugins/datasource/cloudwatch/__mocks__/CloudWatchDataSource.ts:2315036295": [
       [16, 24, 123, "Do not use any type assertions.", "2367581958"],
       [31, 4, 92, "Do not use any type assertions.", "2163436289"],
       [35, 4, 266, "Do not use any type assertions.", "1239587141"],
-      [55, 16, 27, "Do not use any type assertions.", "3919133751"]
+      [56, 16, 27, "Do not use any type assertions.", "3919133751"]
     ],
     "public/app/plugins/datasource/cloudwatch/__mocks__/cloudwatch-sql-test-data/multiLineFullQuery.ts:863852381": [
       [9, 10, 4524, "Do not use any type assertions.", "2760128011"]
@@ -3880,17 +3880,21 @@ exports[`no type assertions`] = {
       [55, 47, 66, "Do not use any type assertions.", "257719288"],
       [62, 5, 40, "Do not use any type assertions.", "589617352"]
     ],
-    "public/app/plugins/datasource/cloudwatch/components/ConfigEditor.tsx:1350761016": [
-      [102, 22, 34, "Do not use any type assertions.", "1692406735"]
+    "public/app/plugins/datasource/cloudwatch/components/ConfigEditor.test.tsx:4057721851": [
+      [132, 5, 13, "Do not use any type assertions.", "538937261"]
+    ],
+    "public/app/plugins/datasource/cloudwatch/components/ConfigEditor.tsx:686187224": [
+      [152, 22, 34, "Do not use any type assertions.", "1692406735"]
     ],
     "public/app/plugins/datasource/cloudwatch/components/LogsQueryEditor.tsx:3592370976": [
       [52, 33, 28, "Do not use any type assertions.", "1081347704"]
     ],
-    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.test.tsx:4231019726": [
+    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.test.tsx:2040368726": [
       [12, 70, 34, "Do not use any type assertions.", "1535357135"],
-      [24, 15, 9, "Do not use any type assertions.", "3692209159"]
+      [24, 15, 9, "Do not use any type assertions.", "3692209159"],
+      [47, 15, 9, "Do not use any type assertions.", "3692209159"]
     ],
-    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.tsx:719311531": [
+    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.tsx:2139586250": [
       [62, 14, 29, "Do not use any type assertions.", "115491437"],
       [97, 39, 57, "Do not use any type assertions.", "1866145996"]
     ],
@@ -3926,17 +3930,17 @@ exports[`no type assertions`] = {
       [456, 50, 101, "Do not use any type assertions.", "2285906034"],
       [570, 19, 83, "Do not use any type assertions.", "55035528"]
     ],
-    "public/app/plugins/datasource/cloudwatch/datasource.ts:1299576841": [
-      [218, 26, 85, "Do not use any type assertions.", "598275619"],
-      [347, 23, 52, "Do not use any type assertions.", "3463806655"],
-      [396, 43, 28, "Do not use any type assertions.", "426490724"],
-      [532, 17, 66, "Do not use any type assertions.", "2836656125"],
-      [590, 34, 232, "Do not use any type assertions.", "2639260342"],
-      [630, 16, 26, "Do not use any type assertions.", "1259697827"],
-      [865, 11, 47, "Do not use any type assertions.", "3491676769"],
-      [865, 11, 19, "Do not use any type assertions.", "2012170033"],
-      [898, 23, 47, "Do not use any type assertions.", "3514668393"],
-      [898, 23, 19, "Do not use any type assertions.", "3095385657"]
+    "public/app/plugins/datasource/cloudwatch/datasource.ts:2292708008": [
+      [220, 26, 85, "Do not use any type assertions.", "598275619"],
+      [349, 23, 52, "Do not use any type assertions.", "3463806655"],
+      [398, 43, 28, "Do not use any type assertions.", "426490724"],
+      [534, 17, 66, "Do not use any type assertions.", "2836656125"],
+      [592, 34, 232, "Do not use any type assertions.", "2639260342"],
+      [632, 16, 26, "Do not use any type assertions.", "1259697827"],
+      [871, 11, 47, "Do not use any type assertions.", "3491676769"],
+      [871, 11, 19, "Do not use any type assertions.", "2012170033"],
+      [904, 23, 47, "Do not use any type assertions.", "3514668393"],
+      [904, 23, 19, "Do not use any type assertions.", "3095385657"]
     ],
     "public/app/plugins/datasource/cloudwatch/dynamic-labels/CompletionItemProvider.test.ts:2308040365": [
       [13, 17, 20, "Do not use any type assertions.", "3987315101"],
@@ -5327,30 +5331,44 @@ exports[`no type assertions`] = {
     "public/app/plugins/panel/graph/threshold_manager.ts:1638035193": [
       [90, 27, 21, "Do not use any type assertions.", "4170053750"]
     ],
-    "public/app/plugins/panel/heatmap-new/HeatmapPanel.tsx:1036460904": [
+    "public/app/plugins/panel/heatmap-old/color_legend.ts:3585235020": [
+      [110, 25, 32, "Do not use any type assertions.", "3363799010"],
+      [151, 25, 32, "Do not use any type assertions.", "3363799010"],
+      [220, 23, 32, "Do not use any type assertions.", "3363799010"],
+      [253, 25, 32, "Do not use any type assertions.", "3363799010"],
+      [287, 23, 18, "Do not use any type assertions.", "3968413993"]
+    ],
+    "public/app/plugins/panel/heatmap-old/rendering.ts:923167403": [
+      [762, 45, 10, "Do not use any type assertions.", "3459414797"]
+    ],
+    "public/app/plugins/panel/heatmap-old/specs/heatmap_ctrl.test.ts:4128755898": [
+      [6, 14, 9, "Do not use any type assertions.", "3692209159"],
+      [29, 50, 13, "Do not use any type assertions.", "2566260947"]
+    ],
+    "public/app/plugins/panel/heatmap/HeatmapPanel.tsx:1036460904": [
       [72, 26, 79, "Do not use any type assertions.", "2972403194"],
       [74, 26, 54, "Do not use any type assertions.", "2184934679"],
       [113, 24, 103, "Do not use any type assertions.", "1385046468"],
       [189, 45, 13, "Do not use any type assertions.", "1645847559"]
     ],
-    "public/app/plugins/panel/heatmap-new/fields.test.ts:2095719388": [
+    "public/app/plugins/panel/heatmap/fields.test.ts:2095719388": [
       [7, 32, 18, "Do not use any type assertions.", "739464119"]
     ],
-    "public/app/plugins/panel/heatmap-new/migrations.test.ts:1346995470": [
+    "public/app/plugins/panel/heatmap/migrations.test.ts:1017455994": [
       [18, 18, 16, "Do not use any type assertions.", "388222280"]
     ],
-    "public/app/plugins/panel/heatmap-new/migrations.ts:784553340": [
+    "public/app/plugins/panel/heatmap/migrations.ts:2547355944": [
       [128, 22, 27, "Do not use any type assertions.", "3349635193"]
     ],
-    "public/app/plugins/panel/heatmap-new/module.tsx:3365492927": [
+    "public/app/plugins/panel/heatmap/module.tsx:3365492927": [
       [27, 16, 30, "Do not use any type assertions.", "3478399522"],
       [28, 18, 30, "Do not use any type assertions.", "3478399522"],
       [45, 35, 37, "Do not use any type assertions.", "1961056471"]
     ],
-    "public/app/plugins/panel/heatmap-new/palettes.ts:4110363347": [
+    "public/app/plugins/panel/heatmap/palettes.ts:4110363347": [
       [87, 39, 23, "Do not use any type assertions.", "3906212682"]
     ],
-    "public/app/plugins/panel/heatmap-new/utils.ts:2711553971": [
+    "public/app/plugins/panel/heatmap/utils.ts:2711553971": [
       [116, 21, 17, "Do not use any type assertions.", "3632921021"],
       [210, 27, 200, "Do not use any type assertions.", "3195446138"],
       [259, 23, 53, "Do not use any type assertions.", "4087268626"],
@@ -5377,20 +5395,6 @@ exports[`no type assertions`] = {
       [806, 22, 15, "Do not use any type assertions.", "2572578447"],
       [807, 23, 27, "Do not use any type assertions.", "1554701977"],
       [807, 23, 15, "Do not use any type assertions.", "2436216462"]
-    ],
-    "public/app/plugins/panel/heatmap/color_legend.ts:3585235020": [
-      [110, 25, 32, "Do not use any type assertions.", "3363799010"],
-      [151, 25, 32, "Do not use any type assertions.", "3363799010"],
-      [220, 23, 32, "Do not use any type assertions.", "3363799010"],
-      [253, 25, 32, "Do not use any type assertions.", "3363799010"],
-      [287, 23, 18, "Do not use any type assertions.", "3968413993"]
-    ],
-    "public/app/plugins/panel/heatmap/rendering.ts:923167403": [
-      [762, 45, 10, "Do not use any type assertions.", "3459414797"]
-    ],
-    "public/app/plugins/panel/heatmap/specs/heatmap_ctrl.test.ts:4128755898": [
-      [6, 14, 9, "Do not use any type assertions.", "3692209159"],
-      [29, 50, 13, "Do not use any type assertions.", "2566260947"]
     ],
     "public/app/plugins/panel/histogram/Histogram.tsx:3993177092": [
       [223, 26, 9, "Do not use any type assertions.", "3815122951"],
@@ -9210,7 +9214,7 @@ exports[`no explicit any`] = {
       [373, 28, 3, "Unexpected any. Specify a different type.", "193409811"],
       [376, 102, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/features/dashboard/state/PanelModel.ts:1354672921": [
+    "public/app/features/dashboard/state/PanelModel.ts:3953810869": [
       [112, 16, 3, "Unexpected any. Specify a different type.", "193409811"],
       [131, 10, 3, "Unexpected any. Specify a different type.", "193409811"],
       [145, 15, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -9224,14 +9228,14 @@ exports[`no explicit any`] = {
       [214, 26, 3, "Unexpected any. Specify a different type.", "193409811"],
       [218, 22, 3, "Unexpected any. Specify a different type.", "193409811"],
       [223, 15, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [278, 17, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [360, 29, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [373, 15, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [424, 22, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [444, 16, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [455, 22, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [586, 38, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [645, 14, 3, "Unexpected any. Specify a different type.", "193409811"]
+      [285, 17, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [367, 29, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [380, 15, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [431, 22, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [451, 16, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [462, 22, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [593, 38, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [652, 14, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/features/dashboard/state/TimeModel.ts:2763994651": [
       [3, 8, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -9867,8 +9871,8 @@ exports[`no explicit any`] = {
     "public/app/features/plugins/admin/types.ts:593250396": [
       [236, 10, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/features/plugins/built_in_plugins.ts:648965312": [
-      [79, 22, 3, "Unexpected any. Specify a different type.", "193409811"]
+    "public/app/features/plugins/built_in_plugins.ts:2973583336": [
+      [93, 22, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/features/plugins/components/AppRootPage.test.tsx:3268377528": [
       [68, 99, 3, "Unexpected any. Specify a different type.", "193409811"]
@@ -10668,23 +10672,30 @@ exports[`no explicit any`] = {
     "public/app/plugins/datasource/cloud-monitoring/types.ts:2289779553": [
       [217, 26, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/datasource/cloudwatch/__mocks__/CloudWatchDataSource.ts:2937369549": [
+    "public/app/plugins/datasource/cloudwatch/__mocks__/CloudWatchDataSource.ts:2315036295": [
       [15, 12, 3, "Unexpected any. Specify a different type.", "193409811"],
       [15, 29, 3, "Unexpected any. Specify a different type.", "193409811"],
       [20, 8, 3, "Unexpected any. Specify a different type.", "193409811"],
       [33, 9, 3, "Unexpected any. Specify a different type.", "193409811"],
       [48, 9, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [55, 40, 3, "Unexpected any. Specify a different type.", "193409811"]
+      [56, 40, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/plugins/datasource/cloudwatch/__mocks__/monarch/Monaco.ts:1596319131": [
       [54, 19, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.test.tsx:4231019726": [
+    "public/app/plugins/datasource/cloudwatch/components/ConfigEditor.test.tsx:4057721851": [
+      [132, 15, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/datasource/cloudwatch/components/ConfigEditor.tsx:686187224": [
+      [53, 35, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.test.tsx:2040368726": [
       [12, 39, 3, "Unexpected any. Specify a different type.", "193409811"],
       [12, 47, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [24, 21, 3, "Unexpected any. Specify a different type.", "193409811"]
+      [24, 21, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [47, 21, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.tsx:719311531": [
+    "public/app/plugins/datasource/cloudwatch/components/LogsQueryField.tsx:2139586250": [
       [52, 75, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/plugins/datasource/cloudwatch/components/MetricsQueryEditor/Alias.tsx:4073366699": [
@@ -10721,26 +10732,26 @@ exports[`no explicit any`] = {
       [459, 11, 3, "Unexpected any. Specify a different type.", "193409811"],
       [576, 7, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/datasource/cloudwatch/datasource.ts:1299576841": [
+    "public/app/plugins/datasource/cloudwatch/datasource.ts:2292708008": [
       [93, 12, 3, "Unexpected any. Specify a different type.", "193409811"],
       [94, 17, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [531, 53, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [532, 80, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [548, 86, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [608, 56, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [608, 84, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [608, 96, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [608, 108, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [646, 24, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [671, 38, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [703, 66, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [779, 74, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [787, 62, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [795, 33, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [806, 71, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [834, 32, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [834, 46, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [966, 26, 3, "Unexpected any. Specify a different type.", "193409811"]
+      [533, 53, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [534, 80, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [550, 86, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [610, 56, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [610, 84, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [610, 96, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [610, 108, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [648, 24, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [673, 38, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [705, 66, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [781, 74, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [789, 62, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [797, 33, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [808, 71, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [840, 32, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [840, 46, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [972, 26, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/plugins/datasource/cloudwatch/language_provider.test.ts:609679032": [
       [114, 7, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -10781,14 +10792,14 @@ exports[`no explicit any`] = {
       [822, 19, 3, "Unexpected any. Specify a different type.", "193409811"],
       [854, 19, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/datasource/cloudwatch/types.ts:2557118143": [
-      [234, 34, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [239, 37, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [245, 9, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [248, 31, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [361, 17, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [415, 14, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [434, 10, 3, "Unexpected any. Specify a different type.", "193409811"]
+    "public/app/plugins/datasource/cloudwatch/types.ts:2636482939": [
+      [235, 34, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [240, 37, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [246, 9, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [249, 31, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [362, 17, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [416, 14, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [435, 10, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/plugins/datasource/cloudwatch/utils/datalinks.test.ts:1719390651": [
       [25, 23, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13048,36 +13059,7 @@ exports[`no explicit any`] = {
     "public/app/plugins/panel/graph/utils.ts:1760782600": [
       [33, 47, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap-new/HeatmapHoverView.tsx:4206969103": [
-      [32, 20, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [51, 38, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [51, 95, 3, "Unexpected any. Specify a different type.", "193409811"]
-    ],
-    "public/app/plugins/panel/heatmap-new/HeatmapPanel.tsx:1036460904": [
-      [189, 55, 3, "Unexpected any. Specify a different type.", "193409811"]
-    ],
-    "public/app/plugins/panel/heatmap-new/migrations.test.ts:1346995470": [
-      [15, 15, 3, "Unexpected any. Specify a different type.", "193409811"]
-    ],
-    "public/app/plugins/panel/heatmap-new/migrations.ts:784553340": [
-      [43, 47, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [160, 21, 3, "Unexpected any. Specify a different type.", "193409811"]
-    ],
-    "public/app/plugins/panel/heatmap-new/module.tsx:3365492927": [
-      [27, 43, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [28, 45, 3, "Unexpected any. Specify a different type.", "193409811"]
-    ],
-    "public/app/plugins/panel/heatmap-new/palettes.ts:4110363347": [
-      [87, 59, 3, "Unexpected any. Specify a different type.", "193409811"]
-    ],
-    "public/app/plugins/panel/heatmap-new/utils.ts:2711553971": [
-      [64, 27, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [215, 21, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [396, 21, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [495, 10, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [527, 9, 3, "Unexpected any. Specify a different type.", "193409811"]
-    ],
-    "public/app/plugins/panel/heatmap/axes_editor.ts:3923458214": [
+    "public/app/plugins/panel/heatmap-old/axes_editor.ts:3923458214": [
       [1, 9, 3, "Unexpected any. Specify a different type.", "193409811"],
       [2, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
       [3, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13086,7 +13068,7 @@ exports[`no explicit any`] = {
       [8, 22, 3, "Unexpected any. Specify a different type.", "193409811"],
       [8, 41, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/color_legend.ts:3585235020": [
+    "public/app/plugins/panel/heatmap-old/color_legend.ts:3585235020": [
       [26, 18, 3, "Unexpected any. Specify a different type.", "193409811"],
       [41, 29, 3, "Unexpected any. Specify a different type.", "193409811"],
       [62, 18, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13106,7 +13088,7 @@ exports[`no explicit any`] = {
       [295, 39, 3, "Unexpected any. Specify a different type.", "193409811"],
       [296, 17, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/color_scale.ts:433524801": [
+    "public/app/plugins/panel/heatmap-old/color_scale.ts:433524801": [
       [3, 43, 3, "Unexpected any. Specify a different type.", "193409811"],
       [3, 106, 3, "Unexpected any. Specify a different type.", "193409811"],
       [3, 114, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13114,12 +13096,12 @@ exports[`no explicit any`] = {
       [15, 60, 3, "Unexpected any. Specify a different type.", "193409811"],
       [18, 3, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/display_editor.ts:1605320932": [
+    "public/app/plugins/panel/heatmap-old/display_editor.ts:1605320932": [
       [1, 9, 3, "Unexpected any. Specify a different type.", "193409811"],
       [2, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
       [5, 22, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/heatmap_ctrl.ts:813415896": [
+    "public/app/plugins/panel/heatmap-old/heatmap_ctrl.ts:2784513824": [
       [29, 21, 3, "Unexpected any. Specify a different type.", "193409811"],
       [119, 17, 3, "Unexpected any. Specify a different type.", "193409811"],
       [120, 14, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13128,14 +13110,14 @@ exports[`no explicit any`] = {
       [124, 8, 3, "Unexpected any. Specify a different type.", "193409811"],
       [126, 15, 3, "Unexpected any. Specify a different type.", "193409811"],
       [133, 22, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [165, 15, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [348, 30, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [378, 14, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [378, 25, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [378, 37, 3, "Unexpected any. Specify a different type.", "193409811"],
-      [378, 48, 3, "Unexpected any. Specify a different type.", "193409811"]
+      [168, 15, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [351, 30, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [381, 14, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [381, 25, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [381, 37, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [381, 48, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/heatmap_data_converter.ts:718034718": [
+    "public/app/plugins/panel/heatmap-old/heatmap_data_converter.ts:718034718": [
       [14, 17, 3, "Unexpected any. Specify a different type.", "193409811"],
       [94, 33, 3, "Unexpected any. Specify a different type.", "193409811"],
       [142, 35, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13155,7 +13137,7 @@ exports[`no explicit any`] = {
       [477, 23, 3, "Unexpected any. Specify a different type.", "193409811"],
       [477, 33, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/heatmap_tooltip.ts:2789219159": [
+    "public/app/plugins/panel/heatmap-old/heatmap_tooltip.ts:2789219159": [
       [14, 11, 3, "Unexpected any. Specify a different type.", "193409811"],
       [15, 9, 3, "Unexpected any. Specify a different type.", "193409811"],
       [16, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13186,7 +13168,7 @@ exports[`no explicit any`] = {
       [247, 52, 3, "Unexpected any. Specify a different type.", "193409811"],
       [270, 56, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/rendering.ts:923167403": [
+    "public/app/plugins/panel/heatmap-old/rendering.ts:923167403": [
       [32, 41, 3, "Unexpected any. Specify a different type.", "193409811"],
       [32, 52, 3, "Unexpected any. Specify a different type.", "193409811"],
       [32, 64, 3, "Unexpected any. Specify a different type.", "193409811"],
@@ -13234,24 +13216,53 @@ exports[`no explicit any`] = {
       [762, 52, 3, "Unexpected any. Specify a different type.", "193409811"],
       [820, 32, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/specs/heatmap_ctrl.test.ts:4128755898": [
+    "public/app/plugins/panel/heatmap-old/specs/heatmap_ctrl.test.ts:4128755898": [
       [6, 20, 3, "Unexpected any. Specify a different type.", "193409811"],
       [34, 18, 3, "Unexpected any. Specify a different type.", "193409811"],
       [60, 18, 3, "Unexpected any. Specify a different type.", "193409811"],
       [81, 18, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/specs/heatmap_data_converter.test.ts:2752362950": [
+    "public/app/plugins/panel/heatmap-old/specs/heatmap_data_converter.test.ts:2752362950": [
       [14, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
       [73, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
       [120, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
       [233, 13, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
-    "public/app/plugins/panel/heatmap/types.ts:2221161687": [
+    "public/app/plugins/panel/heatmap-old/types.ts:2221161687": [
       [2, 7, 3, "Unexpected any. Specify a different type.", "193409811"],
       [3, 12, 3, "Unexpected any. Specify a different type.", "193409811"],
       [4, 12, 3, "Unexpected any. Specify a different type.", "193409811"],
       [5, 13, 3, "Unexpected any. Specify a different type.", "193409811"],
       [12, 11, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/panel/heatmap/HeatmapHoverView.tsx:4206969103": [
+      [32, 20, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [51, 38, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [51, 95, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/panel/heatmap/HeatmapPanel.tsx:1036460904": [
+      [189, 55, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/panel/heatmap/migrations.test.ts:1017455994": [
+      [15, 15, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/panel/heatmap/migrations.ts:2547355944": [
+      [43, 47, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [161, 21, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/panel/heatmap/module.tsx:3365492927": [
+      [27, 43, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [28, 45, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/panel/heatmap/palettes.ts:4110363347": [
+      [87, 59, 3, "Unexpected any. Specify a different type.", "193409811"]
+    ],
+    "public/app/plugins/panel/heatmap/utils.ts:2711553971": [
+      [64, 27, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [215, 21, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [396, 21, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [495, 10, 3, "Unexpected any. Specify a different type.", "193409811"],
+      [527, 9, 3, "Unexpected any. Specify a different type.", "193409811"]
     ],
     "public/app/plugins/panel/histogram/Histogram.tsx:3993177092": [
       [130, 31, 3, "Unexpected any. Specify a different type.", "193409811"],
