@@ -4404,7 +4404,7 @@ __metadata:
     sinon: 14.0.0
     tinycolor2: 1.4.2
     tslib: 2.4.0
-    typescript: 4.6.4
+    typescript: 4.7.4
     uplot: 1.6.21
     xss: 1.0.11
   languageName: unknown
@@ -4423,7 +4423,7 @@ __metadata:
     rollup-plugin-sourcemaps: 0.6.3
     rollup-plugin-terser: 7.0.2
     tslib: 2.4.0
-    typescript: 4.6.4
+    typescript: 4.7.4
   languageName: unknown
   linkType: soft
 
@@ -4462,7 +4462,7 @@ __metadata:
     tracelib: 1.0.1
     ts-loader: 6.2.1
     tslib: 2.4.0
-    typescript: 4.6.4
+    typescript: 4.7.4
     uuid: 8.3.2
     webpack: 5.73.0
     yaml: ^2.0.0
@@ -4551,7 +4551,7 @@ __metadata:
     rxjs: 7.5.5
     systemjs: 0.20.19
     tslib: 2.4.0
-    typescript: 4.6.4
+    typescript: 4.7.4
   languageName: unknown
   linkType: soft
 
@@ -4569,7 +4569,7 @@ __metadata:
     rollup-plugin-sourcemaps: 0.6.3
     rollup-plugin-terser: 7.0.2
     tslib: 2.4.0
-    typescript: 4.6.4
+    typescript: 4.7.4
   languageName: unknown
   linkType: soft
 
@@ -4850,7 +4850,7 @@ __metadata:
     tinycolor2: 1.4.2
     ts-loader: 8.0.11
     tslib: 2.4.0
-    typescript: 4.6.4
+    typescript: 4.7.4
     uplot: 1.6.21
     uuid: 8.3.2
     webpack: 5.73.0
@@ -4994,7 +4994,7 @@ __metadata:
     tinycolor2: 1.4.2
     tslib: 2.4.0
     tween-functions: ^1.2.0
-    typescript: 4.6.4
+    typescript: 4.7.4
   languageName: unknown
   linkType: soft
 
@@ -21037,7 +21037,7 @@ __metadata:
     ts-loader: 9.2.6
     ts-node: 10.8.1
     tslib: 2.4.0
-    typescript: 4.6.4
+    typescript: 4.7.4
     uplot: 1.6.21
     uuid: 8.3.2
     vendor: "link:./public/vendor"
@@ -35597,7 +35597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:>=2.7":
+"typescript@npm:4.7.4, typescript@npm:>=2.7":
   version: 4.7.4
   resolution: "typescript@npm:4.7.4"
   bin:
@@ -35637,7 +35637,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@>=2.7#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.7.4#~builtin<compat/typescript>, typescript@patch:typescript@>=2.7#~builtin<compat/typescript>":
   version: 4.7.4
   resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"
   bin:
