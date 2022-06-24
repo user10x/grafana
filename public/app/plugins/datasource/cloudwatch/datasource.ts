@@ -486,7 +486,7 @@ export class CloudWatchDatasource
 
   getLogRowContext = async (
     row: LogRowModel,
-    { limit = 10, direction = 'BACKWARD' }: RowContextOptions = {}
+    { limit = 10, direction = 'BACKWARD', region }: RowContextOptions = {}
   ): Promise<{ data: DataFrame[] }> => {
     let logStreamField = null;
     let logField = null;
@@ -508,6 +508,7 @@ export class CloudWatchDatasource
     const requestParams: GetLogEventsRequest = {
       limit,
       startFromHead: direction !== 'BACKWARD',
+      region,
       logGroupName: parseLogGroupName(logField!.values.get(row.rowIndex)),
       logStreamName: logStreamField!.values.get(row.rowIndex),
     };
