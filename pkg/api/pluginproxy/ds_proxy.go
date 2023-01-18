@@ -229,7 +229,7 @@ func (proxy *DataSourceProxy) director(req *http.Request) {
 
 	jsonData := make(map[string]interface{})
 	if proxy.ds.JsonData != nil {
-		jsonData, err = proxy.ds.JsonData.Map()
+		jsonData = proxy.ds.JsonData
 		if err != nil {
 			ctxLogger.Error("Failed to get json data as map", "jsonData", proxy.ds.JsonData, "error", err)
 			return

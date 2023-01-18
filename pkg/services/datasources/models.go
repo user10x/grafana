@@ -48,13 +48,13 @@ type DataSource struct {
 	BasicAuth     bool   `json:"basicAuth"`
 	BasicAuthUser string `json:"basicAuthUser"`
 	// swagger:ignore
-	BasicAuthPassword string            `json:"-"`
-	WithCredentials   bool              `json:"withCredentials"`
-	IsDefault         bool              `json:"isDefault"`
-	JsonData          *simplejson.Json  `json:"jsonData"`
-	SecureJsonData    map[string][]byte `json:"secureJsonData"`
-	ReadOnly          bool              `json:"readOnly"`
-	Uid               string            `json:"uid"`
+	BasicAuthPassword string                 `json:"-"`
+	WithCredentials   bool                   `json:"withCredentials"`
+	IsDefault         bool                   `json:"isDefault"`
+	JsonData          map[string]interface{} `json:"jsonData"`
+	SecureJsonData    map[string][]byte      `json:"secureJsonData"`
+	ReadOnly          bool                   `json:"readOnly"`
+	Uid               string                 `json:"uid"`
 
 	Created time.Time `json:"created,omitempty"`
 	Updated time.Time `json:"updated,omitempty"`
@@ -63,13 +63,18 @@ type DataSource struct {
 // AllowedCookies parses the jsondata.keepCookies and returns a list of
 // allowed cookies, otherwise an empty list.
 func (ds DataSource) AllowedCookies() []string {
+	var ret []string
 	if ds.JsonData != nil {
-		if keepCookies := ds.JsonData.Get("keepCookies"); keepCookies != nil {
-			return keepCookies.MustStringArray()
+		if keepCookies := ds.JsonData["keepCookies"]; keepCookies != nil {
+			cookies, ok := ds.JsonData["keepCookies"].([]string)
+			if !ok {
+				return ret
+			}
+			return cookies
 		}
 	}
 
-	return []string{}
+	return ret
 }
 
 // Specific error type for grpc secrets management so that we can show more detailed plugin errors to users

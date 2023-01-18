@@ -107,17 +107,17 @@ func TestDataSourceProxy_routeRule(t *testing.T) {
 		require.NoError(t, err)
 
 		ds := &datasources.DataSource{
-			JsonData: simplejson.NewFromAny(map[string]interface{}{
+			JsonData: map[string]interface{}{
 				"clientId":   "asd",
 				"dynamicUrl": "https://dynamic.grafana.com",
 				"queryParam": "apiKey",
-			}),
+			},
 			SecureJsonData: map[string][]byte{
 				"key": key,
 			},
 		}
 
-		jd, err := ds.JsonData.Map()
+		jd := ds.JsonData
 		require.NoError(t, err)
 		dsInfo := DSInfo{
 			ID:       ds.Id,
@@ -275,10 +275,10 @@ func TestDataSourceProxy_routeRule(t *testing.T) {
 		require.NoError(t, err)
 
 		ds := &datasources.DataSource{
-			JsonData: simplejson.NewFromAny(map[string]interface{}{
+			JsonData: map[string]interface{}{
 				"clientId": "asd",
 				"tenantId": "mytenantId",
-			}),
+			},
 			SecureJsonData: map[string][]byte{
 				"clientSecret": key,
 			},
@@ -303,7 +303,7 @@ func TestDataSourceProxy_routeRule(t *testing.T) {
 				client = newFakeHTTPClient(t, json)
 				defer func() { client = originalClient }()
 
-				jd, err := ds.JsonData.Map()
+				jd := ds.JsonData
 				require.NoError(t, err)
 				dsInfo := DSInfo{
 					ID:       ds.Id,
@@ -420,13 +420,14 @@ func TestDataSourceProxy_routeRule(t *testing.T) {
 	})
 
 	t.Run("When proxying a data source with no keepCookies specified", func(t *testing.T) {
-		json, err := simplejson.NewJson([]byte(`{"keepCookies": []}`))
-		require.NoError(t, err)
+		jdMap := map[string]interface{}{
+			"keepCookies": make([]string, 0),
+		}
 
 		ds := &datasources.DataSource{
 			Type:     datasources.DS_GRAPHITE,
 			Url:      "http://graphite:8086",
-			JsonData: json,
+			JsonData: jdMap,
 		}
 
 		ctx := &models.ReqContext{}
@@ -452,13 +453,16 @@ func TestDataSourceProxy_routeRule(t *testing.T) {
 	})
 
 	t.Run("When proxying a data source with keep cookies specified", func(t *testing.T) {
-		json, err := simplejson.NewJson([]byte(`{"keepCookies": ["JSESSION_ID"]}`))
-		require.NoError(t, err)
+
+		cookiesToKeep := []string{"JSESSION_ID"}
+		jdMap := map[string]interface{}{
+			"keepCookies": cookiesToKeep,
+		}
 
 		ds := &datasources.DataSource{
 			Type:     datasources.DS_GRAPHITE,
 			Url:      "http://graphite:8086",
-			JsonData: json,
+			JsonData: jdMap,
 		}
 
 		ctx := &models.ReqContext{}
@@ -515,9 +519,9 @@ func TestDataSourceProxy_routeRule(t *testing.T) {
 		ds := &datasources.DataSource{
 			Type: "custom-datasource",
 			Url:  "http://host/root/",
-			JsonData: simplejson.NewFromAny(map[string]interface{}{
+			JsonData: map[string]interface{}{
 				"oauthPassThru": true,
-			}),
+			},
 		}
 
 		req, err := http.NewRequest("GET", "http://localhost/asd", nil)
@@ -1002,7 +1006,7 @@ func createAuthTest(t *testing.T, secretsStore secretskvs.SecretsKVStore, dsType
 			OrgId:    1,
 			Name:     fmt.Sprintf("%s,%s,%s,%s", dsType, url, authType, authCheck),
 			Type:     dsType,
-			JsonData: simplejson.New(),
+			JsonData: map[string]interface{}{},
 			Url:      url,
 		},
 	}
